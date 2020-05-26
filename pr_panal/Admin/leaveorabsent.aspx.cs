@@ -101,7 +101,7 @@ public partial class Admin_leaveorabsent : System.Web.UI.Page
                         ds = dal.getDataSet("USPLeaveOrAbsent", col1, val1);
                     }
                 }
-                
+                //Test only
                 if (ds.Tables[1].Rows.Count > 0)
                 {
                     string strPendingTask = string.Empty;
