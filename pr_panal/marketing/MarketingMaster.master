@@ -1,0 +1,95 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MarketingMaster.master.cs"
+    Inherits="Marketing_MarketingMaster" %> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Marketing Panel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="icon" type="image/png" href="../images/favicon.ico" media="all" />
+    <link href="../css/buttons.css" rel="stylesheet" type="text/css" />
+    <link href="../css/class1.css" rel="stylesheet" type="text/css" />
+    <link href="../css/marketing.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body bgcolor="#E6E6E6" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <form id="form1" runat="server">
+    <div>
+        <table id="Table_01" width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td height="80" valign="top" background="../images/top-bg.jpg">
+                    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="32%" height="78" background="../images/top-bg.jpg">
+                                <div align="left">
+                                    <a href="marketingmain.aspx">
+                                        <img src="../images/index_03.jpg" width="385" height="78"></a><br>
+                                </div>
+                            </td>
+                            <td width="52%" valign="bottom">
+                                <table width="600" border="0" align="left" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td>
+                                            <div align="center">
+                                            </div>
+                                        </td>
+                                        <td valign="bottom">
+                                            <table width="600" border="0" align="left" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td width="246">
+                                                        <div align="center">
+                                                            <font color="#CCFF00" size="2" face="Verdana, Arial, Helvetica, sans-serif">Welcome
+                                                                <strong>
+                                                                    <%=WelcomeMessages%></strong></font></div>
+                                                    </td>
+                                                    <td width="168">
+                                                        <%--<div align="right">
+                                                            &nbsp;<span class="red"><strong><a href="change_pass.aspx"><font color="#FFFFFF"
+                                                                size="1" face="Verdana, Arial, Helvetica, sans-serif">Change Password</font></a></strong></span>&nbsp;
+                                                        </div>--%>
+                                                    </td>
+                                                    <td width="168">
+                                                        <div align="right">
+                                                            <img src="../images/logout.jpg" width="15" height="15" align="absmiddle">&nbsp;<span
+                                                                class="red"><strong>
+                                                                    <asp:LinkButton ID="linkbLogout" runat="server" OnClick="linkbLogout_OnClick" CssClass="style8"><font color="yellow" size="1" face="Verdana, Arial, Helvetica, sans-serif">LOGOUT</font></asp:LinkButton>
+                                                                </strong></span>&nbsp;
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+            <marquee><span class="admin_msg"><%=a_msg%>&nbsp;</span></marquee><br />
+        <br>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <br>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td height="39" valign="top">
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle">
+                    <div align="center">
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<strong><font color="#999999" size="1" face="Verdana, Arial, Helvetica, sans-serif">Site
+                                Empowered by AKS India Web Solutions </font></strong>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<script language="vbscript" runat="server">
+
+Sub Application_OnStart
+
+  Session.TimeOut = 480
+  
+End Sub
+
+Sub Session_OnStart
+  
+  Session.TimeOut = 480
+  
+  Session("main") = "hello"
+  
+  Application.Lock
+  
+  Application.UnLock 
+   
+End Sub
+
+Sub Application_OnEnd
+
+  	Session.TimeOut = 480
+	
+End Sub
+
+Sub Session_OnEnd
+
+  	Session.TimeOut = 480
+	
+End Sub
+
+</script>

@@ -1,0 +1,112 @@
+.Tab {
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	vertical-align: middle;
+	height: 18px;
+	width: 8px;
+	padding-left: 15px;
+}
+.Tab1 
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+	padding-left: 5px;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+.Tab2 
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+	padding-left: 5px;
+	vertical-align: middle;
+	padding-right: 5px;
+	font-weight: bold;
+
+}
+.Tab3 
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+	padding-left: 5px;
+	vertical-align: middle;
+	padding-right: 5px;
+	font-weight: normal;
+
+}
+.red 
+{
+	font-family: Verdana;
+	font-size: 10px;
+	color: #FF0000;
+	text-decoration: none;
+	padding-left: 5px;
+	vertical-align: middle;
+	padding-right: 5px;
+	font-weight: bold;
+
+}
+.Head
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	vertical-align: middle;
+	height: 18px;
+	padding-left: 15px;
+}
+.txt
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: red;
+	text-decoration: none;
+	vertical-align: middle;
+	height: 18px;
+	padding-left: 15px;
+}
+.txtgreen
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: green;
+	text-decoration: none;
+	vertical-align: middle;
+	height: 18px;
+	padding-left: 15px;
+}
+.txtpink
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FF00FF;
+	text-decoration: none;
+	vertical-align: middle;
+	height: 18px;
+	padding-left: 15px;
+}
+.txtdel
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #999999;
+	text-decoration: none;
+	vertical-align: middle;
+	height: 18px;
+	padding-left: 15px;
+}

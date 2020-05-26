@@ -1,0 +1,227 @@
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.bg {
+	background-image: url(tab.jpg);
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;	
+}
+.plainbg {
+	background-color: #336666;	
+	font-size: x-small;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.topb {
+	border: 1px solid #CDDCD7;
+}
+.totalb {
+	border: 1px solid #A7BAB3;
+}
+.odd {
+	background-color: #FFFFFF;
+	border: 1px solid #BED1CA;
+	font-size: 13px;
+}
+.even {
+	background-color: #f7f7f0;
+	border: 1px solid #bed1ca;	
+	font-size: 13px;
+}
+.OverStyle {
+	background-color: #F0FAEF;
+	border: 1px solid #bed1ca;
+	font-size: 13px;
+
+}
+.SelectStyle {
+	background-color: #FFFFEA;
+	border: 1px solid #bed1ca;
+	font-size: 13px;
+}
+.bottomr {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #a7bab3;
+	font-size: x-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.right {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #a7bab3;	
+	font-size: 13px;
+}
+.topr {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-top-color: #a7bab3;
+	border-right-color: #a7bab3;
+}
+.bottoml {
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #a7bab3;
+	border-left-color: #a7bab3;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+}
+.left {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #a7bab3;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+
+
+}
+.formtext1 {
+	
+	font-size: 13px;
+	color: #1E3C3C;
+	font-weight: bold;
+
+}
+.formtext2 {
+	
+	font-size: 13px;
+	color: #1E3C3C;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: a7bab4;
+	font-weight: bold;
+}
+.formtext3 {
+	
+	font-size: 13px;
+	color: #1E3C3C;
+	font-weight: bold;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #a7bab3;
+
+}
+.tbr {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #a4b7b3;
+}
+.topbottom {
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: a4b7b3;
+	border-bottom-color: a4b7b3;
+}
+.tbl {
+	
+	font-size: 13px;
+	font-weight: bold;
+	color: #1e3c3c;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #a4b7b3;
+	border-bottom-color: #a4b7b3;
+	border-left-color: #a4b7b3;
+}
+.tb2 {
+	
+	font-size: 10px;
+	font-weight: small;
+	color: #1e3c3c;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #a4b7b3;
+	border-bottom-color: #a4b7b3;
+	border-left-color: #a4b7b3;
+}
+.bottom {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: a4b7b3;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+}
+.textborder {
+
+	border: 1px solid #1F3F3F;
+}
+.formtext4 {	
+	font-size: 12px;
+	color: #FF0000;
+	font-weight: normal;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #a7bab3;
+}
+.bg1 {
+	background-color: #CEDFCE;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+
+}
+.formtext5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.formtext6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #004242;
+}
+.linktext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #004242;
+	text-decoration: none;
+}
+.GetHide {
+	VISIBILITY: hidden;	
+	font-size: 13px;
+}
+.GetShow {
+	VISIBILITY: default;	
+	font-size: 13px;
+}
+.MOX {
+	FLOAT: right;
+	WORD-SPACING: normal;
+	WIDTH: auto;
+	COLOR: #0033CC;
+	BACKGROUND-REPEAT: no-repeat;
+	HEIGHT: auto;
+	BACKGROUND-COLOR: #f0faef;	
+	font-size: 13px;
+	text-decoration: none;
+	border: 1px solid #bed1ca;
+}
+.HoldSelect {
+	BACKGROUND-COLOR: #F3F7E6;
+	font-size: 13px;	
+}
+.Select {
+BACKGROUND-COLOR: #fdffce;
+font-size: 13px;
+color: #4500A4;
+}

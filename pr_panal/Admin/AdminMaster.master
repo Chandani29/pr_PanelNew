@@ -1,0 +1,167 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs"
+    Inherits="Admin_AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin Panel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="icon" type="image/png" href="../images/favicon.ico" media="all" />
+
+    <link href="../css/buttons.css" ref="stylesheet" type="text/css" />
+    <link href="../css/class1.css" rel="stylesheet" type="text/css" />
+    <link href="../css/marketing.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+
+        .notification {
+            background-color: #555;
+            color: white;
+            text-decoration: none;
+            padding: 0px 4px;
+            position: relative;
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+            .notification:hover {
+                background: red;
+            }
+
+            .notification .badge {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                padding: 5px 10px;
+                border-radius: 50%;
+                background-color: red;
+                color: white;
+            }
+    </style>
+</head>
+<body bgcolor="#E6E6E6" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <form id="form1" runat="server">
+        <div>
+            <table id="Table_01" width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td height="80" valign="top" background="../images/top-bg.jpg">
+                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="32%" height="78" background="../images/top-bg.jpg">
+                                    <div align="left">
+                                        <a href="adminmain.aspx">
+                                            <img src="../images/index_01.jpg" width="385" height="78"></a><br>
+                                    </div>
+                                </td>
+                                <td width="52%" valign="bottom">
+                                    <table width="600" border="0" align="left" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <div align="center">
+                                                </div>
+                                            </td>
+                                            <td valign="bottom">
+                                                <table width="600" border="0" align="left" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td width="246">
+                                                            <div align="center">
+                                                                <font color="#CCFF00" size="2" face="Verdana, Arial, Helvetica, sans-serif">Welcome
+                                                                Admin</font>
+                                                            </div>
+                                                        </td>
+                                                        <td width="354">
+                                                            <div align="right">
+                                                                <img src="../images/logout.jpg" width="15" height="15" align="absmiddle">&nbsp;<span
+                                                                    class="red"><strong>
+                                                                        <asp:LinkButton ID="linkbLogout" runat="server" OnClick="linkbLogout_OnClick" CssClass="style8"><font color="yellow" size="1" face="Verdana, Arial, Helvetica, sans-serif">LOGOUT</font></asp:LinkButton>
+                                                                    </strong></span>&nbsp;
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <br /> 
+            <marquee><span class="admin_msg"><%=a_msg%>&nbsp;</span></marquee>
+            <br />
+            <br/>
+            <table width="100%" border="1" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="middle" class="Tab2" bgcolor="#CCCCCC">
+                        <a href="create_developer.aspx" target="_blank">Create Developer&nbsp;</a>
+                    </td>
+                    <td valign="middle" class="Tab2" bgcolor="#CCCCCC">
+                        <a href="create_marketing.aspx" target="_blank">Create Marketing&nbsp;</a>
+                    </td>
+                    <td valign="middle" class="Tab2" bgcolor="#CCCCCC">
+                        <%--<a href="admin_msg.aspx" target="_blank">Create New Message&nbsp;</a>--%>
+                        <a href="leaveorabsent.aspx">Leave or Absent&nbsp;</a> 
+                    </td>
+                    <td valign="middle" class="Tab2" bgcolor="#CCCCCC">
+                        <a href="pending_list.aspx" target="_blank">Pending&nbsp;List&nbsp;</a>
+                    </td>
+                    <td valign="middle" class="Tab2" bgcolor="#CCCCCC">
+                        <a href="project_home.aspx" target="_blank">Project&nbsp;List&nbsp;</a>
+                    </td>
+                    <td valign="middle" class="Tab2" bgcolor="#CCCCCC">
+                        <a href="expense_details.aspx" target="_blank">Expense&nbsp;Report&nbsp;</a>
+                    </td>
+                    <td valign="middle" class="Tab2" bgcolor="#CCCCCC">
+                        <a href="Interviewee.aspx">HR&nbsp;Interview&nbsp;</a>
+                    </td>
+                    <td valign="middle" class="Tab2" bgcolor="#CCCCCC">
+                        <a href="Attendance.aspx">Attendance &nbsp;</a>
+                    </td>  
+                     <td valign="middle" class="Tab2" bgcolor="#CCCCCC">
+                        <a href="Edit_Attendance.aspx">Edit Attendance&nbsp;</a>
+                    </td>  
+                     <td valign="middle" class="Tab2" bgcolor="#CCCCCC">
+                        <a href="Missed_Attendance.aspx">Missed Attendance&nbsp;</a> 
+                    </td> 
+                    <td valign="middle" class="Tab2" bgcolor="#CCCCCC">
+                        <a href="Hr_Permission.aspx">Hr Permission&nbsp;</a> 
+                    </td> 
+                    <td valign="middle" class="Tab2" bgcolor="#CCCCCC">
+
+                        <%if (numberOfPendingApprovalLeave > 0)
+                                {%>
+                            <a href="Hr_LeavePermission.aspx"  class="notification">Hr Leave Permission&nbsp;<span class="badge">
+                                <%=numberOfPendingApprovalLeave%></span></a>
+                            <%} %>
+                            <%else
+                                { %>
+                            <a href="Hr_LeavePermission.aspx">Hr Leave permission&nbsp;</a> 
+                            <%} %>
+                        
+                    </td> 
+                </tr>
+            </table>
+            <br> 
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <br>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="middle">
+                        <div align="center">
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<strong><font color="#999999" size="1" face="Verdana, Arial, Helvetica, sans-serif">Site
+                                Empowered by AKS India Web Solutions </font></strong>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
